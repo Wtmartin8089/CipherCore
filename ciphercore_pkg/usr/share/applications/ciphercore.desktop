@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=CipherCore
+Comment=Military-grade file encryption
+Exec=/opt/ciphercore/run.sh
+Icon=security
+Terminal=false
+Type=Application
+Categories=Utility;

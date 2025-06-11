@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=CipherCore
+Comment=Secure File Encryption and Decryption
+Exec=python3 /usr/local/bin/gui.py
+Icon=ciphercore
+Terminal=false
+Type=Application
+Categories=Utility;
