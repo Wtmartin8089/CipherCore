@@ -1,53 +1,60 @@
 # 🔐 CipherCore
 
-**CipherCore** is your no-nonsense, ultra-secure file encryption app — engineered for everyday warriors who value **privacy, simplicity, and power**.
+**CipherCore** is a cross-platform file encryption app forged for serious security and silky simplicity. Built using military-grade ciphers and a clean blue GUI, it lets anyone encrypt or decrypt files with total control — no tech degree required.
+
+![CipherCore](https://raw.githubusercontent.com/WTMartin8089/CipherCore/main/icon/ciphercore.png)
 
 ---
 
 ## 🚀 Features
 
-- 🔒 Military-grade encryption with **ChaCha20-Poly1305**
-- 🧠 Password-to-key protection via **Argon2id**
-- 🎨 Clean GUI with soft blue theme (built with Tkinter)
-- 💾 Secure encryption & decryption for any file type
-- ✂️ Auto-generates smart file names (.enc / .dec)
-- 📋 Salt displayed *and* copied automatically on encryption
-- 📁 Cross-platform packaging: Linux, Android, iOS (PWA)
+- 🔒 **ChaCha20-Poly1305 Encryption** with Argon2id password-based key derivation
+- 🧂 Secure salt generation + clipboard copy for smooth decryption
+- 🎨 Polished Tkinter GUI with a soft blue theme
+- 📁 Encrypt/decrypt any file type — no size restrictions
+- ❌ Handles wrong passwords and corrupt files gracefully
+- 🧠 Auto-renames output files: `file.enc`, `file.dec`
+- 🖼 Integrated desktop launcher + icon (Linux)
+- 📦 Distributed as `.deb`, `.apk`, and web-hosted PWA (in progress)
 
 ---
 
 ## 🖥 Platform Support
 
-| Platform | Status    |
-|----------|-----------|
-| Linux    | ✅ Packaged as `.deb` installer |
-| Android  | ✅ Buildable via [Chaquopy] integration |
-| iOS      | 🔜 Launching via PWA for full Apple support |
+| Platform     | Status             |
+|--------------|--------------------|
+| 🐧 Linux      | ✅ `.deb` complete |
+| 🤖 Android    | 🔄 Building via Chaquopy |
+| 🍎 iOS (Safari) | 🔜 PWA delivery |
+| 💻 Desktop     | ✅ Fully supported |
+| 🌐 Web         | 🔄 GitHub Pages landing site in progress |
+
+---
+
+## 📸 Screenshots
+
+Coming soon: UI screenshots, encryption preview, and more.
 
 ---
 
 ## ⚙ How to Use
 
-1. **Launch** the GUI (`gui.py`)
-2. Select a file → Choose to encrypt or decrypt
-3. Enter password + copy the salt when encrypting
-4. Use the salt & password combo to decrypt later
+1. Run `gui.py`
+2. Choose a file to encrypt or decrypt
+3. Enter a password
+4. On encryption, copy the salt string displayed
+5. Use that salt + password for decryption later
 
 ---
 
-## 📂 File Structure
+## 📂 Project Structure
 
-- `encryptor.py` – Handles encryption logic
-- `decryptor.py` – Handles decryption logic
-- `gui.py` – Full GUI interface
-- `ciphercore.desktop` – Adds CipherCore to Linux system menu
-- `CHANGELOG.md` – Detailed changelog
-- `README.md` – This file
-
----
-
-## 🤝 Credits
-
-Built with ❤️ by **Wayne Martin**  
-GitHub: [WTMartin8089](https://github.com/WTMartin8089)
+```bash
+├── gui.py             # GUI entrypoint (Tkinter)
+├── encryptor.py       # File encryption logic
+├── decryptor.py       # File decryption logic
+├── ciphercore.desktop # Linux desktop entry
+├── CHANGELOG.md
+├── README.md
+└── icon/
 
